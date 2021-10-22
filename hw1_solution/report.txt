@@ -1,0 +1,18 @@
+failed: []
+max_score: 1.0
+passed:
+- test_coverage[task::python.inverted_index_lib]:
+    raw_score: 1.0
+    score: 0.4
+- test_lint[task::python.inverted_index_lib]:
+    raw_score: 1.0
+    score: 0.1
+- test_query_inverted_index_intersect_results[task::python.inverted_index_lib]:
+    raw_score: 1.0
+    score: 0.2
+- test_can_dump_and_load_inverted_index[task::python.inverted_index_lib]:
+    raw_score: 1.0
+    score: 0.3
+score: 1.0
+unscaled_max_score: 4.0
+unscaled_score: 4.0
