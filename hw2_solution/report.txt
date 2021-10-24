@@ -1,0 +1,24 @@
+failed: []
+max_score: 1.0
+passed:
+- test_lint[task::python.inverted_index_cli]:
+    raw_score: 1.0
+    score: 0.1
+- test_cli_short_help_string[task::python.inverted_index_cli]:
+    raw_score: 1.0
+    score: 0.1
+- test_cli_long_help_string[task::python.inverted_index_cli]:
+    raw_score: 1.0
+    score: 0.1
+- test_json_and_default_strategy_are_the_same[task::python.inverted_index_cli]:
+    raw_score: 1.0
+    score: 0.2
+- test_inverted_index_dump_is_not_zero[task::python.inverted_index_cli]:
+    raw_score: 1.0
+    score: 0.1
+- test_inverted_index_query_utf8_cli[task::python.inverted_index_cli]:
+    raw_score: 1.0
+    score: 0.4
+score: 1.0
+unscaled_max_score: 6.0
+unscaled_score: 6.0
