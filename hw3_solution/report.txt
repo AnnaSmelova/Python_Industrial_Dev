@@ -1,0 +1,33 @@
+failed: []
+max_score: 1.0000000000000002
+passed:
+- test_coverage[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.2
+- test_lint[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.1
+- test_json_and_default_strategy_are_different[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.05
+- test_struct_and_default_strategy_are_the_same[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.05
+- test_inverted_index_query_cp1251[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.15
+- test_inverted_index_query_utf8[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.15
+- test_inverted_index_build_compression_quality[task::python.inverted_index]:
+    raw_score: 1.1417036688312725
+    score: 0.22834073376625452
+- test_inverted_index_dump_is_not_zero[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.0
+- test_inverted_index_query_utf8_cli[task::python.inverted_index]:
+    raw_score: 1.0
+    score: 0.1
+score: 1.0283407337662547
+unscaled_max_score: 9.0
+unscaled_score: 9.141703668831273
