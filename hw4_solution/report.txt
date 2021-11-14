@@ -1,0 +1,21 @@
+failed: []
+max_score: 1.0
+passed:
+- test_stdout_do_not_contain_any_log_message[task::python.asset_log]:
+    raw_score: 1.0
+    score: 0.1
+- test_stderr_contains_info_messages[task::python.asset_log]:
+    raw_score: 1.0
+    score: 0.2
+- test_log_debug_contains_all_messages[task::python.asset_log]:
+    raw_score: 1.0
+    score: 0.2
+- test_log_warn_contains_warn_messages[task::python.asset_log]:
+    raw_score: 1.0
+    score: 0.2
+- test_coverage[task::python.asset_log]:
+    raw_score: 1.0
+    score: 0.3
+score: 1.0
+unscaled_max_score: 5.0
+unscaled_score: 5.0
