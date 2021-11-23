@@ -1,0 +1,33 @@
+failed: []
+max_score: 1.0
+passed:
+- test_is_51_coverage[task::python.asset_mock_revenue_100500]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_48_coverage[task::python.asset_mock_usd_enclosing]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_48_coverage[task::python.asset_mock_usd_simple]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_unit_test_correct[task::python.asset_mock_revenue_100500]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_unit_test_correct[task::python.asset_mock_usd_simple]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_unit_test_correct[task::python.asset_mock_usd_enclosing]:
+    raw_score: 1.0
+    score: 0.1
+- test_user_solution_match_regexp[task::python.mock_deep_sleep]:
+    raw_score: 1.0
+    score: 0.2
+- test_is_100_coverage[task::python.mock_sleep]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_sleep_mocked[task::python.mock_sleep]:
+    raw_score: 1.0
+    score: 0.1
+score: 1.0
+unscaled_max_score: 9.0
+unscaled_score: 9.0
