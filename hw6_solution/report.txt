@@ -1,0 +1,24 @@
+failed: []
+max_score: 1.0
+passed:
+- test_lint[task::python.web_spy]:
+    raw_score: 1.0
+    score: 0.1
+- test_cli_call_return_expected_products[task::python.web_spy]:
+    raw_score: 1.0
+    score: 0.4
+- test_all_unit_tests_pass[task::python.web_spy]:
+    raw_score: 1.0
+    score: 0.1
+- test_integration_test_raise_expected_error[task::python.web_spy]:
+    raw_score: 1.0
+    score: 0.1
+- test_correct_usage_of_slow_and_integration_markers[task::python.web_spy]:
+    raw_score: 1.0
+    score: 0.1
+- test_coverage_unit[task::python.web_spy]:
+    raw_score: 1.0
+    score: 0.2
+score: 1.0
+unscaled_max_score: 6.0
+unscaled_score: 6.0
