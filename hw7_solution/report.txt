@@ -1,0 +1,21 @@
+failed: []
+max_score: 1.0
+passed:
+- test_lint[task::python.decorator]:
+    raw_score: 1.0
+    score: 0.1
+- test_all_test_pass_for_indenter[task::python.decorator]:
+    raw_score: 1.0
+    score: 0.3
+- test_is_100_indenter_coverage[task::python.decorator]:
+    raw_score: 1.0
+    score: 0.2
+- test_all_test_pass_for_repeater[task::python.decorator]:
+    raw_score: 1.0
+    score: 0.2
+- test_is_100_repeater_coverage[task::python.decorator]:
+    raw_score: 1.0
+    score: 0.2
+score: 1.0
+unscaled_max_score: 5.0
+unscaled_score: 5.0
