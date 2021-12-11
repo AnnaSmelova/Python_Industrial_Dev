@@ -1,0 +1,42 @@
+failed: []
+max_score: 1.0000000000000002
+passed:
+- test_return_404_for_wrong_route[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_return_503_when_cbr_is_unavailable[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_can_add_and_list_assets[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_can_add_asset_with_the_same_name_only_once[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_cleanup[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_can_request_several_asset_by_name[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_we_can_mock_web[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_can_parse_cbr_daily_output[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.15
+- test_can_parse_cbr_key_indicators_output[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.15
+- test_calculate_revenue[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.05
+- test_coverage[task::python.asset_web_service]:
+    raw_score: 0.9875
+    score: 0.1975
+- test_lint[task::python.asset_web_service]:
+    raw_score: 1.0
+    score: 0.1
+score: 0.9975
+unscaled_max_score: 12.0
+unscaled_score: 11.9875
