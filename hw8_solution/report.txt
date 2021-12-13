@@ -32,11 +32,11 @@ passed:
     raw_score: 1.0
     score: 0.05
 - test_coverage[task::python.asset_web_service]:
-    raw_score: 0.9875
-    score: 0.1975
+    raw_score: 1.0
+    score: 0.2
 - test_lint[task::python.asset_web_service]:
     raw_score: 1.0
     score: 0.1
-score: 0.9975
+score: 1.0000000000000002
 unscaled_max_score: 12.0
-unscaled_score: 11.9875
+unscaled_score: 12.0

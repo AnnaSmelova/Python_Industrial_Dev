@@ -220,7 +220,7 @@ def test_parse_cbr_currency_base_daily():
         'AZN': 44.4127,
         'AMD': 0.144485
     }
-    with open('cbr_data/cbr_currency_base_daily.html', 'r', encoding='utf8') as f:
+    with open('cbr_currency_base_daily.html', 'r', encoding='utf8') as f:
         result = parse_cbr_currency_base_daily(f.read())
     assert expected_result['AUD'] == result['AUD'] and \
            expected_result['AZN'] == result['AZN'] and \
@@ -239,7 +239,7 @@ def test_parse_cbr_key_indicators():
         'Pt': 2459.96,
         'Pd': 5667.14
     }
-    with open('cbr_data/cbr_key_indicators.html', 'r', encoding='utf8') as f:
+    with open('cbr_key_indicators.html', 'r', encoding='utf8') as f:
         result = parse_cbr_key_indicators(f.read())
     assert expected_result == result, (
         f'Wrong result: {result}, '
@@ -249,7 +249,7 @@ def test_parse_cbr_key_indicators():
 
 @patch('requests.get')
 def test_cbr_daily_api(mock_get, client):
-    with open('cbr_data/cbr_currency_base_daily.html', 'r', encoding='utf8') as f:
+    with open('cbr_currency_base_daily.html', 'r', encoding='utf8') as f:
         mock_get.return_value.text = f.read()
     mock_get.return_value.status_code = 200
     expected_result = {
@@ -270,7 +270,7 @@ def test_cbr_daily_api(mock_get, client):
 
 @patch('requests.get')
 def test_cbr_key_indicator_api(mock_get, client):
-    with open('cbr_data/cbr_key_indicators.html', 'r', encoding='utf8') as f:
+    with open('cbr_key_indicators.html', 'r', encoding='utf8') as f:
         mock_get.return_value.text = f.read()
     mock_get.return_value.status_code = 200
     expected_result = {
@@ -457,9 +457,9 @@ def test_asset_get_api(route, expected_result, client):
 def test_asset_calc_revenue_api(mock_get, route, periods, client):
     side_effect = []
     return_value = namedtuple('return_value', ['text', 'status_code'])
-    with open('cbr_data/cbr_key_indicators.html', 'r', encoding='utf8') as f:
+    with open('cbr_key_indicators.html', 'r', encoding='utf8') as f:
         side_effect.append(return_value(f.read(), 200))
-    with open('cbr_data/cbr_currency_base_daily.html', 'r', encoding='utf8') as f:
+    with open('cbr_currency_base_daily.html', 'r', encoding='utf8') as f:
         side_effect.append(return_value(f.read(), 200))
     mock_get.side_effect = side_effect
     daily = {
