@@ -1,0 +1,21 @@
+failed: []
+max_score: 0.9999999999999999
+passed:
+- test_lint[task::python.web_service_log]:
+    raw_score: 1.0
+    score: 0.1
+- test_is_service_implementation_correct[task::python.web_service_log]:
+    raw_score: 1.0
+    score: 0.4
+- test_is_graphite_cli_implementation_correct[task::python.web_service_log]:
+    raw_score: 1.0
+    score: 0.2
+- test_coverage_service[task::python.web_service_log]:
+    raw_score: 1.0
+    score: 0.2
+- test_coverage_graphite[task::python.web_service_log]:
+    raw_score: 1.0
+    score: 0.1
+score: 0.9999999999999999
+unscaled_max_score: 5.0
+unscaled_score: 5.0
